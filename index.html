@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Shape of Patterns uses regular expressions to teach pattern literacy, technical judgment, and a more mature way to approach problems.">
+  <meta name="theme-color" content="#f3efe6">
+  <meta property="og:title" content="The Shape of Patterns">
+  <meta property="og:description" content="Regex is the subject. Judgment is the lesson.">
+  <meta property="og:type" content="website">
+  <title>The Shape of Patterns | Chris Forsythe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      <a class="wordmark" href="#top" aria-label="The Shape of Patterns home">The Shape of Patterns</a>
+      <nav aria-label="Primary navigation">
+        <a href="#book">The book</a>
+        <a href="#journey">The journey</a>
+        <a href="#author">The author</a>
+        <a class="nav-cta" href="#updates">Book updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A book about patterns and decisions</p>
+          <h1>The Shape<br>of Patterns</h1>
+          <p class="subtitle">Learning to see structure through regular expressions</p>
+          <p class="hero-lede">Regex is the subject. <strong>Judgment is the lesson.</strong></p>
+          <p class="hero-body">Learn regular expressions from the ground up, then use them to practice something larger: defining problems, testing assumptions, managing complexity, and choosing the right tool.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#updates">Follow the book</a>
+            <a class="text-link" href="#book">See what makes it different <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="pattern-window" aria-label="Decorative regular expression showing the book's method">
+          <div class="window-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <pre><code><span class="comment"># Start with the problem</span>
+^                  <span class="comment"># Find the boundary</span>
+(?&lt;structure&gt;      <span class="comment"># Name what matters</span>
+  observe          # See the problem
+  | define         # Define the problem
+  | decompose      # Figure it out
+  | verify         # Test the solution
+
+  #-------------
+  # Learn to write readable regex, how to think 
+  # about problems, or even just look at me 
+  # attempt to explain recursion. 
+  # ------------
+)
+$              <span class="comment"># Know where to stop</span></code></pre>
+          <p class="pattern-caption">Readable first. Compact later.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement" aria-labelledby="statement-title">
+      <div class="wrap narrow">
+        <p class="kicker">The larger lesson</p>
+        <h2 id="statement-title">The hard part is not the regex. It is understanding the problem.</h2>
+        <p>Most regex books teach you how to write patterns. <em>The Shape of Patterns</em> teaches you how to think about a problem and uses regex as a visible, testable way to practice the habits behind mature technical work.</p>
+      </div>
+    </section>
+
+    <section class="book" id="book" aria-labelledby="book-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="kicker">Learn the pattern, not just the syntax</p>
+          <h2 id="book-title">The syntax gets more advanced. More importantly, so do the decisions.</h2>
+        </div>
+
+        <div class="question-grid">
+          <article>
+            <span class="question-number">01</span>
+            <h3>What am I actually solving?</h3>
+            <p>Begin with the data, the boundaries, and the rule instead of reaching immediately for symbols.</p>
+          </article>
+          <article>
+            <span class="question-number">02</span>
+            <h3>How will I know it works?</h3>
+            <p>Use examples, counterexamples, edge cases, returned spans, and captures to test what the pattern truly promises.</p>
+          </article>
+          <article>
+            <span class="question-number">03</span>
+            <h3>What happens when it fails?</h3>
+            <p>Reason about ambiguity, performance, false positives, false negatives, and operational consequences.</p>
+          </article>
+          <article>
+            <span class="question-number">04</span>
+            <h3>Who inherits this later?</h3>
+            <p>Make intent, assumptions, ownership, and tradeoffs visible enough for another person to understand and change safely.</p>
+          </article>
+          <article>
+            <span class="question-number">05</span>
+            <h3>Does the environment change the answer?</h3>
+            <p>Understand engines, host operations, compatibility, performance models, and the cost of specialized features.</p>
+          </article>
+          <article>
+            <span class="question-number">06</span>
+            <h3>Should regex own this problem?</h3>
+            <p>Compare regex with literal string operations, ordinary code, parsers, libraries, and staged solutions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey" id="journey" aria-labelledby="journey-title">
+      <div class="wrap journey-grid">
+        <div class="journey-intro">
+          <p class="kicker">A progression toward maturity</p>
+          <h2 id="journey-title">You come in wanting to understand regex.</h2>
+          <p>You leave with a repeatable way to approach unfamiliar technical problems.</p>
+        </div>
+        <ol class="journey-list">
+          <li><span>01</span><div><strong>See the structure</strong><p>Characters, positions, boundaries, categories, repetition, and readable patterns.</p></div></li>
+          <li><span>02</span><div><strong>Define the rule</strong><p>Examples, counterexamples, decomposition, expression, verification, and maintenance.</p></div></li>
+          <li><span>03</span><div><strong>Work in the real world</strong><p>Code, terminals, editors, logs, security, automation, analytics, spreadsheets, and databases.</p></div></li>
+          <li><span>04</span><div><strong>Understand the machinery</strong><p>Engines, compatibility, backtracking, predictable execution, and performance tradeoffs.</p></div></li>
+          <li><span>05</span><div><strong>Make the decision</strong><p>Reliability, tool choice, failure behavior, ownership, restraint, and judgment.</p></div></li>
+          <li><span>06</span><div><strong>When Regular Expressions aren't the answer</strong><p>Consider alternative approaches for text processing and pattern matching.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="audience" aria-labelledby="audience-title">
+      <div class="wrap">
+        <p class="kicker">Wherever you are with regex</p>
+        <h2 id="audience-title">Start from understanding.</h2>
+        <div class="audience-grid">
+          <article>
+            <h3>New to regex?</h3>
+            <p>Build a mental model before the symbols become intimidating. Learn why patterns work, not just what to type.</p>
+          </article>
+          <article>
+            <h3>Use it occasionally?</h3>
+            <p>Stop relearning isolated tricks. Develop a process you can carry from one problem and tool to the next.</p>
+          </article>
+          <article>
+            <h3>Already experienced?</h3>
+            <p>Go beyond syntax into engines, performance, maintenance, compatibility, ownership, restraint, and judgment.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="transformation" aria-labelledby="transformation-title">
+      <div class="wrap narrow">
+        <p class="kicker">The payoff</p>
+        <h2 id="transformation-title">The pattern did not become simpler. You became more fluent.</h2>
+        <p>At first, a complicated regex looks like punctuation. Later, you see components, relationships, boundaries, and decisions. The goal is not to memorize every feature. It is to know how to begin.</p>
+        <blockquote>
+          <p>“I can figure this out.”</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="author" id="author" aria-labelledby="author-title">
+      <div class="wrap author-grid">
+        <div>
+          <p class="kicker">Where this way of thinking came from</p>
+          <h2 id="author-title">Experience with systems, risk, projects, and people.</h2>
+        </div>
+        <div class="author-copy">
+          <p>Chris Forsythe has worked in Cybersecurity and IT Security for more than 20 years. He is a co-founder of <a href="https://growl.info/" target="_blank" rel="noopener noreferrer">Growl</a> and <a href="https://perian.org/" target="_blank" rel="noopener noreferrer">Perian</a> and formerly served as Project Manager for <a href="https://adium.im/" target="_blank" rel="noopener noreferrer">Adium</a>.</p>
+          <p>His work in open source was centered on helping projects and people move forward: community building, technical communication, release management, product direction, and making complex decisions understandable.</p>
+          <p>Over time, the hardest questions stopped being purely technical. What are we trying to accomplish? What are we assuming? What happens when we are wrong? Can someone else maintain what we built? Is the technically interesting solution actually the right one?</p>
+          <p class="author-emphasis">Regex gave him a language for teaching those questions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" aria-label="Book philosophy">
+      <div class="wrap">
+        <p>Regex is the vehicle.</p>
+        <h2>Learning how to think about patterns is the destination.</h2>
+      </div>
+    </section>
+
+    <section class="updates" id="updates" aria-labelledby="updates-title">
+      <div class="wrap updates-grid">
+        <div>
+          <p class="kicker">Follow the book</p>
+          <h2 id="updates-title">Want to know when it is ready?</h2>
+          <p>I'm writing a book, not starting a regex newsletter. Sign up for publication news and meaningful updates about <em>The Shape of Patterns</em>. I will not email you just because it is Tuesday.</p>
+        </div>
+        <form class="signup-form" action="#" method="post">
+          <label for="email">Email address</label>
+          <div class="form-row">
+            <script async data-uid="486c4cf3c9" src="https://the-shape-of-patterns.kit.com/486c4cf3c9/index.js"></script>
+          </div>
+          <p class="form-note">I will not send you junk email. I'll tell you when the book is ready. Then you can buy the book. I promise the book cover will be pretty. Well, pretty to someone.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> Chris Forsythe</p>
+      <p><em>The Shape of Patterns</em> is in development.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
